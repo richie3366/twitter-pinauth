@@ -44,7 +44,7 @@ oauth.getOAuthRequestToken(function(error, oauth_token, oauth_token_secret, resu
 	      console.log('oauth_token_secret :' + oauth_access_token_secret);
 	      console.log('accesstoken results :', (results2));
 
-	      tokens.access_token = oauth_access_token;
+	      tokens.access_token_key = oauth_access_token;
 	      tokens.access_token_secret = oauth_access_token_secret;
 
 	      fs.writeFile('tokens.json', JSON.stringify(tokens), function(){
